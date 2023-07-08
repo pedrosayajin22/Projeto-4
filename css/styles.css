@@ -51,7 +51,8 @@ header .menu-desktop ul li a {
     text-decoration: none;
     color: #b4b4b4;
 }
- .menu-mobile{
+
+.menu-mobile {
     display: none;
     float: right;
     cursor: pointer;
@@ -60,7 +61,8 @@ header .menu-desktop ul li a {
     background-image: url(../imagens/menu-mobile.png);
     background-size: 100% 100%;
 }
- header nav.menu-mobile ul{
+
+header nav.menu-mobile ul {
     background-color: white;
     text-align: center;
     position: absolute;
@@ -71,14 +73,16 @@ header .menu-desktop ul li a {
     width: 100%;
 
 }
-nav.menu-mobile ul li  {
+
+nav.menu-mobile ul li {
     padding: 10px 0;
     text-transform: uppercase;
     text-decoration: none;
 }
-nav.menu-mobile a{
+
+nav.menu-mobile a {
     text-decoration: none;
-    color:#b4b4b4;
+    color: #b4b4b4;
 }
 
 .mosaico-single {
@@ -196,30 +200,280 @@ section.perfil-container .texto-perfil p {
     font-size: 14px;
     margin-top: 8px;
 }
-section.videos{
-    padding: 50px 0 ;
+
+section.videos {
+    padding: 50px 0;
 }
-section.videos .box-video{
+
+section.videos .box-video {
     float: left;
+    position: relative;
+    border: 5px solid white;
     width: 33.3%;
     padding-top: calc(33.3% * 0.6);
-    background-color: green;
+}
+
+section.videos iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.tratamentos {
+    padding-top: 50px;
 }
 
 
+section.tratamentos .tratamento-container {
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos>h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 30px;
+}
+
+section.tratamentos .container {
+    padding: 40px 0;
+}
+
+.tratamento-single {
+    padding: 20px;
+}
+
+.tratamento-single h2 {
+    font-size: 18px;
+    color: #737373;
+}
+
+.tratamento-single p {
+    color: #b4b4b4;
+    padding-top: 10px;
+    font-size: 13px
+}
+
+section.depoimentos .container {
+    max-width: 400px;
+}
+
+section.depoimentos .container>h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+
+}
+
+section.depoimentos .depoimentos-single {
+    text-align: center;
+
+}
+
+.depoimentos-single {
+    padding: 0 2%;
+}
+
+.depoimentos-single quote {
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.depoimentos-single .nome-depoimento {
+    padding: 8px 0;
+    margin-bottom: 30px;
+
+}
+
+.nome-depoimento img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.nome-depoimento span {
+    position: relative;
+    top: 8px;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.social {
+    background: linear-gradient(#d4e6f3, #2f3c44);
+
+}
+
+.insta-chamada {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.insta-chamada p {
+    line-height: 20px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.mosaico-social {
+    float: left;
+    width: 100%;
+}
+
+.img-mosaico-single-social {
+    float: left;
+    width: calc(100% / 9);
+    background-image: url('https://www.carboneraetomazini.com.br/wp-content/uploads/2021/03/Aposentadoria-Especial_-O-dentista-pode-trabalhar-depois-de-aposentado.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(100% / 9);
+    border: 2px solid white;
+}
+
+.face-chamada {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.face-chamada p {
+    line-height: 20px;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+section.contato {
+    padding: 60px 2%;
+    background-color: #f5f5f5;
+}
+
+section.contato h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+section.contato form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.form-wrapper {
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+
+.form-wrapper span {
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wrapper input[type=text],
+.form-wrapper input[type=email],
+.form-wrapper input[type=number] {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+
+}
+.form-wrapper textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 9px;
+    height: 121px;
+    border: 1px solid #dadada;
+    resize: none;
+}
+.centraliza{
+    display: flex;
+    justify-content: center;
+}
+.form-wrapper input[type=submit]{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #698293;
+}
+.footer{
+    color: white;
+    padding: 50px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2{
+    font-size: 20px;
+    text-align: center;
+}
+.footer p{
+    font-size: 13px;
+}
+.danki{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #2f3c44;
+    background-image: url(../imagens/logo2.png);
+    background-position: center;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    
+}
+
+    
 
 
 
+
+@media screen and (max-width:1024px) {
+    .img-mosaico-single-social {
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+7) {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width:768px) {
 
-    .menu-desktop{
+    .menu-desktop {
         display: none;
     }
-    .menu-mobile{
+
+    .menu-mobile {
         display: block;
     }
+
     section.servicos .container {
         /* max-width: 800px;
         display: flex;
@@ -265,9 +519,11 @@ section.videos .box-video{
 
 
     }
-section.perfil-container .container .perfil-wrapper{
-    padding-top: 0;
-}
+
+    section.perfil-container .container .perfil-wrapper {
+        padding-top: 0;
+    }
+
     section.perfil-container .texto-perfil {
         display: inline-block;
         text-align: justify;
@@ -288,21 +544,63 @@ section.perfil-container .container .perfil-wrapper{
         height: auto;
         position: static;
     }
+
+    section.videos .container {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    section.videos .box-video {
+        border: 5px solid white;
+        width: 70%;
+        border: 5px solid white;
+        padding-top: calc(70% * 0.6);
+
+    }
+
+
+    section.videos iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-mosaico-single-social {
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social>div:nth-of-type(1n+4) {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:580px) {
     section.perfil-container .img-perfil {
         width: 80%;
         padding-top: 110%;
-        background-color: aqua;
-
     }
+    .w50{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:480px) {
-    header .logo img{
+    header .logo img {
         width: 200px;
     }
-    
-}
+    footer{
+        flex-direction: column;
+    }
+    .footer{
+        padding: 20px 2%;
+    }
 
+}
