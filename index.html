@@ -7,6 +7,7 @@
     <meta name="keywords" content=" palavras,separadas,por,virgula,">
     <meta name="author" content="Pedro Terra">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,18 +25,18 @@
             </div><!--logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="">Quem sou</a></li>
-                    <li><a href="">Depoimentos</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#quemti">Quem sou</a></li>
+                    <li><a href="#depoimento">Depoimentos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             <nav class="menu-mobile">
                 <ul>
-                    <li><a href="">Quem sou</a></li>
-                    <li><a href="">Depoimentos</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#quemti">Quem sou</a></li>
+                    <li><a href="#depoimento">Depoimentos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             <div class="clear"></div><!--clear-->
@@ -108,7 +109,7 @@
             </div><!--box-servico-->
         </div><!--container-->
     </section><!--servicos-->
-    <section class="perfil-container">
+    <section class="perfil-container" id="quemti" >
         <div class="container">
             <div class="perfil-wrapper">
                 <div class="perfil-wrapper2">
@@ -249,12 +250,32 @@
                         e evitadas com a ida regular ao dentista. </p>
                 </div><!--tratamento-single-->
             </div><!--tratamento-->
-            <div class="clear"></div>
+            <!-- <div class="clear"></div> -->
         </div><!--container-->
     </section><!--tratamentos-->
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimento">
+        <h2 style="text-align: center;">Depoimentos</h2>
         <div class="container">
-            <h2>Depoimentos</h2>
+            <div class="depoimentos-single">
+                <quote>
+                    "Estrutura e atendimento excepcionais! adorei o atendimento da Dra. Fernanda,
+                    excelente profissional."
+                </quote>
+                <div class="nome-depoimento">
+                    <img src='./imagens/depoimento1.png' alt="imagem depoimento">
+                    <span>Maria Augusta Santos</span>
+                </div><!--nome-depoimento-->
+            </div><!--depoimentos-single-->
+            <div class="depoimentos-single">
+                <quote>
+                    "Estrutura e atendimento excepcionais! adorei o atendimento da Dra. Fernanda,
+                    excelente profissional."
+                </quote>
+                <div class="nome-depoimento">
+                    <img src='./imagens/depoimento1.png' alt="imagem depoimento">
+                    <span>Maria Augusta Santos</span>
+                </div><!--nome-depoimento-->
+            </div><!--depoimentos-single-->
             <div class="depoimentos-single">
                 <quote>
                     "Estrutura e atendimento excepcionais! adorei o atendimento da Dra. Fernanda,
@@ -302,7 +323,7 @@
 
         <div class="clear"></div>
     </section><!--social-->
-    <section class="contato">
+    <section class="contato" id="contato">
         <h2>Contato</h2>
 
         <form>
@@ -332,7 +353,7 @@
             </div><!--form submit-->
         </form>
     </section><!--contato-->
-    <footer>
+    <footer >
         <div class="footer">
             <h2>Telefone</h2>
             <p>(48) 9999-8888</p>
@@ -343,13 +364,18 @@
             <p>08:00 até 12:00</p>
             <p>14:00 ate 18:00</p>
         </div><!--footer-->
-        <div class="footer">
+        <div class="footer" >
             <h2>Endereço</h2>
             <p>Av. Trompsly, 390. <br> Torre 5 Sala 104</p>
         </div><!--footer-->
         <div class="clear"></div>
     </footer>
     <div class="danki"></div>
+    <script src="../JQuerry.js"></script>
+    <script src="functions.js"></script>
+    <script src="../scroll.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="slides.js"></script>
 </body>
 
 
